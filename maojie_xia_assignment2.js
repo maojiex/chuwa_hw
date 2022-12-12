@@ -14,9 +14,9 @@ const itemsObject = [
 const doubleQuantityAndPrice = (arrayOfObjects) => {
   let newArray = [];
   arrayOfObjects.forEach((object) => {
-    object.quantity = object.quantity * 2;
-    object.price = object.price * 2;
-    newArray.push(object);
+    // object.quantity = object.quantity * 2;
+    // object.price = object.price * 2;
+    newArray.push({quantity: object.quantity * 2, price: object.price * 2});
   });
   return newArray;
 };
